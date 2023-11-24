@@ -25,7 +25,7 @@ const Filter = ({ memorizedMovies: { myMemorizedMovies }, setMyMovies }) => {
   //   *****************************************************************************
 
   return (
-    <div className="max-w-4xl mx-auto flex gap-4">
+    <div className="flex flex-col items-center sm:flex-row gap-4">
       <Search
         placeholder="search for movies"
         allowClear

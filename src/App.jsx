@@ -25,7 +25,7 @@ function App() {
     <div>
       <Navbar />
 
-      <div className="flex">
+      <div className="flex flex-col sm:flex-col items-center space-y-3 mb-5   md:flex-row max-w-4xl mx-auto justify-between">
         <Filter setMyMovies={setMyMovies} memorizedMovies={memorizedMovies} />
         <CreateNewMovie
           memorizedMovies={memorizedMovies}

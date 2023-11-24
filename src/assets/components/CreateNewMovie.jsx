@@ -102,7 +102,7 @@ const CreateNewMovie = ({ setMyMovies, setRandom, memorizedMovies }) => {
 
   return (
     <>
-      <div className="mx-auto mb-5">
+      <div className="mb-5">
         <Button
           type="primary"
           icon={<VideoCameraAddOutlined />}
