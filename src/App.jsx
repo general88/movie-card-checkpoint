@@ -1,47 +1,26 @@
-import { useState, useMemo } from "react";
-import CreateNewMovie from "./assets/components/CreateNewMovie";
-import Filter from "./assets/components/Filter";
-import MovieList from "./assets/components/MovieList";
-import Navbar from "./assets/components/Navbar";
-import { movieData } from "./data";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import MovieStore from "./assets/pages/MovieStore";
+import MovieDetails from "./assets/pages/MovieDetails";
+import MainLayout from "./assets/layout/MainLayout";
+import MovieStoreLayout from "./assets/layout/MovieStoreLayout";
 
-function App() {
-  const [myMovies, setMyMovies] = useState(movieData);
-  const [random, setRandom] = useState(0);
-
-  // Lets us memorise my movieData in a useMemo hook
-
-  const memorizedMovies = useMemo(() => {
-    return {
-      myMemorizedMovies: myMovies,
-    };
-  }, [random]);
-  // ******************************************************************
-  // *********************************************************************
-
-  //
-
+const App = () => {
   return (
-    <div>
-      <Navbar />
+    <React.Fragment>
+      <Routes>
+        {/* <Route path="/" element={<MovieStore />} />
+      <Route path=":movieId" element={<MovieDetails />} /> */}
 
-      <div className="flex flex-col sm:flex-col items-center space-y-3 mb-5   md:flex-row max-w-4xl mx-auto justify-between">
-        <Filter setMyMovies={setMyMovies} memorizedMovies={memorizedMovies} />
-        <CreateNewMovie
-          memorizedMovies={memorizedMovies}
-          setMyMovies={setMyMovies}
-          setRandom={setRandom}
-        />
-      </div>
-      {myMovies.length === 0 ? (
-        <div className="text-center py-24 text-3xl">
-          Searched movies did not return any result
-        </div>
-      ) : (
-        <MovieList myMovies={myMovies} />
-      )}
-    </div>
+        <Route path="/" element={<MainLayout />}>
+          <Route element={<MovieStoreLayout />}>
+            <Route index element={<MovieStore />} />
+            <Route path=":movieId" element={<MovieDetails />} />
+          </Route>
+        </Route>
+      </Routes>
+    </React.Fragment>
   );
-}
+};
 
 export default App;

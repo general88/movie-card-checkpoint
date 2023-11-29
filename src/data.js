@@ -7,6 +7,7 @@ export const movieData = [
     posterURL:
       "https://m.media-amazon.com/images/M/MV5BNTkyOGVjMGEtNmQzZi00NzFlLTlhOWQtODYyMDc2ZGJmYzFhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_FMjpg_UX1000_.jpg",
     rating: "5",
+    trailerLink: "https://www.youtube.com/embed/xvszmNXdM4w",
   },
   {
     id: 2,
@@ -16,6 +17,8 @@ export const movieData = [
     posterURL:
       "https://www.penguinreaders.co.uk/wp-content/uploads/2021/05/9780241493205-768x1179.jpg",
     rating: "5",
+
+    trailerLink: "https://www.youtube.com/embed/jZECVc9blOQ",
   },
   {
     id: 3,
