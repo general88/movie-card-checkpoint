@@ -7,7 +7,9 @@ export const movieData = [
     posterURL:
       "https://m.media-amazon.com/images/M/MV5BNTkyOGVjMGEtNmQzZi00NzFlLTlhOWQtODYyMDc2ZGJmYzFhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_FMjpg_UX1000_.jpg",
     rating: "5",
-    trailerLink: "https://www.youtube.com/embed/xvszmNXdM4w",
+    trailerLink: "https://www.youtube.com/embed/7PzwOiW8-n0",
+    status: "Released",
+    releaseDate: "25 December 2009",
   },
   {
     id: 2,
@@ -17,8 +19,9 @@ export const movieData = [
     posterURL:
       "https://www.penguinreaders.co.uk/wp-content/uploads/2021/05/9780241493205-768x1179.jpg",
     rating: "5",
-
-    trailerLink: "https://www.youtube.com/embed/jZECVc9blOQ",
+    trailerLink: "https://www.youtube.com/embed/c0DKHKVWwkg",
+    status: "Released",
+    releaseDate: "12 November 2008",
   },
   {
     id: 3,
@@ -28,6 +31,9 @@ export const movieData = [
     posterURL:
       "https://shop.vineyardworship.org.uk/_Vineyard/images/products/original/64193.jpg",
     rating: "5",
+    trailerLink: "https://www.youtube.com/embed/rwXe5eKZr6M",
+    status: "Released",
+    releaseDate: "9 March 2007",
   },
   {
     id: 4,
@@ -37,6 +43,9 @@ export const movieData = [
     posterURL:
       "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6482/6482295_sa.jpg;maxHeight=640;maxWidth=550",
     rating: "3",
+    trailerLink: "https://www.youtube.com/embed/tlYKkc4hVD0",
+    status: "Released",
+    releaseDate: "19 May 2023",
   },
   {
     id: 5,
@@ -46,5 +55,20 @@ export const movieData = [
     posterURL:
       "https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Nowhere_%282023_film%29_poster.jpg/220px-Nowhere_%282023_film%29_poster.jpg",
     rating: "4",
+    trailerLink: "https://www.youtube.com/embed/KDUtdcU10YA",
+    status: "Released",
+    releaseDate: "29 September 2023",
+  },
+  {
+    id: 6,
+    title: "The Black Book",
+    description:
+      "After his son is framed for a kidnapping, a bereaved deacon takes justice into his own hands and fights a corrupt police gang to absolve him.........",
+    posterURL:
+      "https://m.media-amazon.com/images/M/MV5BZjFlZWMyYmUtMTI0Ni00YzUxLTgzZGMtZDM2MzU1ZTQxMzdjXkEyXkFqcGdeQXVyOTcwNDEwNTc@._V1_.jpg",
+    rating: "4",
+    trailerLink: "https://www.youtube.com/embed/6PPH4SOm9gk",
+    status: "Released",
+    releaseDate: "22 September 2023",
   },
 ];

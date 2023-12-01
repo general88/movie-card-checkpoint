@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Outlet, useParams } from "react-router-dom";
 import { movieData } from "../../data";
 
 import MovieTrailer from "./MovieTrailer";
+import MovieStore from "./MovieStore";
 
 const MovieDetails = () => {
   const { movieId } = useParams();
+  console.log(movieId);
 
   const [movie, setMovie] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -14,6 +16,7 @@ const MovieDetails = () => {
   const findMovieByID = () => {
     let movie = movieData.find((item) => String(item.id) === movieId);
     setMovie(movie);
+    console.log(movie);
     return movie;
   };
 
@@ -30,7 +33,8 @@ const MovieDetails = () => {
 
   return (
     <div>
-      <MovieTrailer movie={movie} />
+      <MovieStore movie={movie} />
+      <Outlet />
     </div>
   );
 };

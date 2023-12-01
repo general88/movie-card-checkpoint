@@ -3,8 +3,11 @@ import { NavLink, Outlet } from "react-router-dom";
 
 const MovieStoreLayout = () => {
   return (
-    <div className="max-w-4xl mx-auto">
-      <NavLink to="">Back to Movie Store</NavLink>
+    <div className="max-w-5xl mx-auto">
+      <div className="flex gap-5">
+        <NavLink to="/">Back to Movie Store</NavLink>
+        <NavLink to="/oldversion">Previous version</NavLink>
+      </div>
       <Outlet />
     </div>
   );

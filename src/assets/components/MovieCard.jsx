@@ -3,7 +3,7 @@ import { Card, Rate } from "antd";
 import { Link } from "react-router-dom";
 const { Meta } = Card;
 
-const MovieCard = ({ id, title, description, posterURL, rating }) => (
+const MovieCard = ({ id, title, description, posterURL, rating, }) => (
   <Link to={`${id}`}>
     <Card
       hoverable
